@@ -6,7 +6,8 @@
 class HelloWorld : public cocos2d::CCLayer
 {
 public:
-    // Method 'init' in cocos2d-x returns bool, instead of 'id' in cocos2d-iphone (an object pointer)
+    HelloWorld();
+	~HelloWorld();
     virtual bool init();
 
     // there's no 'id' in cpp, so we recommend to return the class instance pointer
@@ -14,6 +15,14 @@ public:
     
     // a selector callback
     void menuCloseCallback(CCObject* pSender);
+    
+    void addPlane();
+    void spriteMoveFinished(CCNode* sender);
+    void gameLogic(float dt);
+    
+    protected:
+        cocos2d::CCArray *_planes;
+        cocos2d::CCArray *_birdy;
 
     // preprocessor macro for "static create()" constructor ( node() deprecated )
     CREATE_FUNC(HelloWorld);
