@@ -82,7 +82,7 @@ bool HelloWorld::init()
     _birdy->addObject(bSprite);
     
     this->schedule( schedule_selector(HelloWorld::gameLogic), 1.0 );
-    
+    this->schedule( schedule_selector(HelloWorld::update) );
     return true;
 }
 
@@ -128,17 +128,63 @@ void HelloWorld::addPlane()
                                           actionMoveDone, NULL) );
 }
 
+void HelloWorld::update(float dt){
+  /*
+    CCArray *birdyToDelete = new CCArray;
+    CCArray* planesToDelete =new CCArray;
+    CCObject* it = NULL;
+    CCObject* jt = NULL;
+    
+        CCSprite *bSprite = dynamic_cast<CCSprite*>(it);
+        CCRect birdyRect = CCRectMake(
+                                           bSprite->getPosition().x - (bSprite->getContentSize().width/2),
+                                           bSprite->getPosition().y - (bSprite->getContentSize().height/2),
+                                           bSprite->getContentSize().width,
+                                           bSprite->getContentSize().height);
+        
+        CCARRAY_FOREACH(_planes, jt)
+        {
+            CCSprite *target = dynamic_cast<CCSprite*>(jt);
+            CCRect targetRect = CCRectMake(
+                                           target->getPosition().x - (target->getContentSize().width/2),
+                                           target->getPosition().y - (target->getContentSize().height/2),
+                                           target->getContentSize().width,
+                                           target->getContentSize().height);
+            
+            if (birdyRect.intersectsRect(targetRect))
+            {
+                planesToDelete->addObject(target);
+                birdyToDelete->addObject(bSprite);
+            }
+        }
+    
+    CCARRAY_FOREACH(planesToDelete, jt)
+    {
+        CCSprite *target = dynamic_cast<CCSprite*>(jt);
+        _planes->removeObject(target);
+        this->removeChild(target, true);
+    }
+    
+    CCARRAY_FOREACH(birdyToDelete, it)
+    {
+        CCSprite* bSprite = dynamic_cast<CCSprite*>(it);
+        _birdy->removeObject(bSprite);
+        this->removeChild(bSprite, true);
+    }
+    
+    birdyToDelete->release();
+    planesToDelete->release();
+   */
+}
+
 
 void HelloWorld::spriteMoveFinished(CCNode* sender)
 {
     CCSprite *sprite = (CCSprite *)sender;
     this->removeChild(sprite, true);
     
-    
     if (sprite->getTag() == 1){
         _planes->removeObject(sprite);
-    }else if (sprite->getTag() == 2){
-        _birdy->removeObject(sprite);
     }
 }
 

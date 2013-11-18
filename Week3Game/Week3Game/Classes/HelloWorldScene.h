@@ -19,6 +19,7 @@ public:
     void addPlane();
     void spriteMoveFinished(CCNode* sender);
     void gameLogic(float dt);
+    void update(float dt);
     
     protected:
         cocos2d::CCArray *_planes;
