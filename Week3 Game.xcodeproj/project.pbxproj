@@ -280,6 +280,12 @@
 		FF5B0B1818395B95005A2CA7 /* libwebsockets.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FF5B0B1718395B95005A2CA7 /* libwebsockets.a */; };
 		FF5B0B1E18395B95005A2CA7 /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FF5B0B1D18395B95005A2CA7 /* AppDelegate.cpp */; };
 		FF5B0B2118395B95005A2CA7 /* HelloWorldScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FF5B0B2018395B95005A2CA7 /* HelloWorldScene.cpp */; };
+		FF5B0B2D1839906D005A2CA7 /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = FF5B0B271839906D005A2CA7 /* bg.png */; };
+		FF5B0B2E1839906D005A2CA7 /* birdy@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FF5B0B281839906D005A2CA7 /* birdy@2x.png */; };
+		FF5B0B2F1839906D005A2CA7 /* birdy.png in Resources */ = {isa = PBXBuildFile; fileRef = FF5B0B291839906D005A2CA7 /* birdy.png */; };
+		FF5B0B301839906D005A2CA7 /* bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FF5B0B2A1839906D005A2CA7 /* bg@2x.png */; };
+		FF5B0B311839906D005A2CA7 /* plane@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FF5B0B2B1839906D005A2CA7 /* plane@2x.png */; };
+		FF5B0B321839906D005A2CA7 /* plane.png in Resources */ = {isa = PBXBuildFile; fileRef = FF5B0B2C1839906D005A2CA7 /* plane.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -873,6 +879,12 @@
 		FF5B0B1D18395B95005A2CA7 /* AppDelegate.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = AppDelegate.cpp; path = Classes/AppDelegate.cpp; sourceTree = "<group>"; };
 		FF5B0B1F18395B95005A2CA7 /* HelloWorldScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HelloWorldScene.h; path = Classes/HelloWorldScene.h; sourceTree = "<group>"; };
 		FF5B0B2018395B95005A2CA7 /* HelloWorldScene.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = HelloWorldScene.cpp; path = Classes/HelloWorldScene.cpp; sourceTree = "<group>"; };
+		FF5B0B271839906D005A2CA7 /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
+		FF5B0B281839906D005A2CA7 /* birdy@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "birdy@2x.png"; sourceTree = "<group>"; };
+		FF5B0B291839906D005A2CA7 /* birdy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = birdy.png; sourceTree = "<group>"; };
+		FF5B0B2A1839906D005A2CA7 /* bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg@2x.png"; sourceTree = "<group>"; };
+		FF5B0B2B1839906D005A2CA7 /* plane@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "plane@2x.png"; sourceTree = "<group>"; };
+		FF5B0B2C1839906D005A2CA7 /* plane.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plane.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -944,6 +956,12 @@
 		FF5B078B18395B92005A2CA7 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				FF5B0B271839906D005A2CA7 /* bg.png */,
+				FF5B0B281839906D005A2CA7 /* birdy@2x.png */,
+				FF5B0B291839906D005A2CA7 /* birdy.png */,
+				FF5B0B2A1839906D005A2CA7 /* bg@2x.png */,
+				FF5B0B2B1839906D005A2CA7 /* plane@2x.png */,
+				FF5B0B2C1839906D005A2CA7 /* plane.png */,
 				FF5B078C18395B92005A2CA7 /* CloseNormal.png */,
 				FF5B078E18395B92005A2CA7 /* CloseSelected.png */,
 				FF5B079018395B92005A2CA7 /* Default.png */,
@@ -2152,18 +2170,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF5B079D18395B92005A2CA7 /* Icon.png in Resources */,
+				FF5B0B301839906D005A2CA7 /* bg@2x.png in Resources */,
 				FF5B084018395B92005A2CA7 /* ChangeLog in Resources */,
 				FF5B078D18395B92005A2CA7 /* CloseNormal.png in Resources */,
 				FF5B079918395B92005A2CA7 /* Icon-Small.png in Resources */,
+				FF5B0B2D1839906D005A2CA7 /* bg.png in Resources */,
 				FF5B079518395B92005A2CA7 /* Icon-72.png in Resources */,
+				FF5B0B2F1839906D005A2CA7 /* birdy.png in Resources */,
 				FF5B079318395B92005A2CA7 /* HelloWorld.png in Resources */,
+				FF5B0B2E1839906D005A2CA7 /* birdy@2x.png in Resources */,
 				FF5B079718395B92005A2CA7 /* Icon-Small-50.png in Resources */,
 				FF5B07A118395B92005A2CA7 /* iTunesArtwork in Resources */,
 				FF5B079B18395B92005A2CA7 /* Icon-Small@2x.png in Resources */,
+				FF5B0B321839906D005A2CA7 /* plane.png in Resources */,
 				FF5B079118395B92005A2CA7 /* Default.png in Resources */,
 				FF5B078F18395B92005A2CA7 /* CloseSelected.png in Resources */,
 				FF5B079F18395B92005A2CA7 /* Icon@2x.png in Resources */,
 				FF5B09B418395B94005A2CA7 /* project.pbxproj in Resources */,
+				FF5B0B311839906D005A2CA7 /* plane@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2564,6 +2588,7 @@
 				FF5B0B2618395B95005A2CA7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
